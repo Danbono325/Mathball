@@ -1,4 +1,5 @@
 import { Component, OnInit } from "@angular/core";
+import { Logo } from "../../models/Logo";
 
 @Component({
   selector: "app-teams",
@@ -6,30 +7,29 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./teams.component.scss"],
 })
 export class TeamsComponent implements OnInit {
-  teams = [
-    {
-      id: 1,
-      name: "Rays",
-    },
-    {
-      id: 2,
-      name: "Yankees",
-    },
-    {
-      id: 3,
-      name: "Red Sox",
-    },
-    {
-      id: 4,
-      name: "Orioles",
-    },
-    {
-      id: 5,
-      name: "Blue Jays",
-    },
-  ];
+  logos: Logo[] = [];
 
   constructor() {}
 
-  ngOnInit() {}
+  ngOnInit() {
+    for (var i = 108; i < 122; i++) {
+      let newLogo = {
+        imgSrc: "https://www.mlbstatic.com/team-logos/" + i + ".svg",
+        teamID: i,
+      };
+      this.logos.push(newLogo);
+    }
+    for (var i = 133; i < 148; i++) {
+      let newLogo = {
+        imgSrc: "https://www.mlbstatic.com/team-logos/" + i + ".svg",
+        teamID: i,
+      };
+      this.logos.push(newLogo);
+    }
+    let newLogo = {
+      imgSrc: "https://www.mlbstatic.com/team-logos/158.svg",
+      teamID: 158,
+    };
+    this.logos.push(newLogo);
+  }
 }

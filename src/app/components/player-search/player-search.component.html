@@ -1,83 +1,84 @@
 <div class="input">
-    <input
+  <input
     class="input-box"
-      #box
-      (keyup)="onEnter(box.value)"
-      (keyup.enter)="getData()"
-      placeholder="Enter a name"
-    />
-  </div>
+    #box
+    (keyup)="onEnter(box.value)"
+    (keyup.enter)="getData()"
+    placeholder="Enter a player's name"
+  />
+</div>
 
-  <ng-container *ngIf="buttonClicked; else showAll">
-    <ng-container *ngIf="numReturned == -1; else results">
-      <h3>No Results Found For "{{ searchTerm }}"</h3>
-    </ng-container>
-    <ng-template #results>
-  
-      <h3 *ngIf="numReturned != -2">{{ numReturned }} Results Found For "{{ searchTerm }}"</h3>
-      <div class="grid-container">
-        <ng-container *ngIf="numReturned > 1; else onePlayer">
-          <div
-            *ngFor="let item of players"
-            class="results"
-            (click)="
-              showDetails(
-                item.player_id,
-                item.name_first,
-                item.name_last,
-                item.team_id
-              )
-            "
-          >
-            <h4>{{ item.name_first }} {{ item.name_last }}</h4>
-            <img
-              [src]="getPhoto(item.player_id)"
-              onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
-            />
-          </div>
-        </ng-container>
-        <ng-template #onePlayer>
-          <div
-          *ngIf="numReturned != -2"
-            class="results"
-            (click)="
-              showDetails(
-                players.player_id,
-                players.name_first,
-                players.name_last,
-                players.team_id
-              )
-            "
-          >
-            <h4>{{ players.name_first }} {{ players.name_last }}</h4>
-            <img
-              [src]="getPhoto(players.player_id)"
-              onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
-            />
-          </div>
-        </ng-template>
-      </div>
-    </ng-template>
+<ng-container *ngIf="buttonClicked; else showAll">
+  <ng-container *ngIf="numReturned == -1; else results">
+    <h3>No Results Found For "{{ searchTerm }}"</h3>
   </ng-container>
-  <ng-template #showAll>
+  <ng-template #results>
+    <h3 *ngIf="numReturned != -2">
+      {{ numReturned }} Results Found For "{{ searchTerm }}"
+    </h3>
     <div class="grid-container">
-      <div
-        *ngFor="let item of players"
-        class="results"
-        (click)="
-          showDetails(
-            item.player_id,
-            item.name_first,
-            item.name_last,
-            item.team_id
-          )
-        "
-      >
-        <h4>{{ item.name_first }} {{ item.name_last }}</h4>
-        <img
-          [src]="getPhoto(item.player_id)"
-          onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
-        />
-      </div>
+      <ng-container *ngIf="numReturned > 1; else onePlayer">
+        <div
+          *ngFor="let item of players"
+          class="results"
+          (click)="
+            showDetails(
+              item.player_id,
+              item.name_first,
+              item.name_last,
+              item.team_id
+            )
+          "
+        >
+          <h4>{{ item.name_first }} {{ item.name_last }}</h4>
+          <img
+            [src]="getPhoto(item.player_id)"
+            onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
+          />
+        </div>
+      </ng-container>
+      <ng-template #onePlayer>
+        <div
+          *ngIf="numReturned != -2"
+          class="results"
+          (click)="
+            showDetails(
+              players.player_id,
+              players.name_first,
+              players.name_last,
+              players.team_id
+            )
+          "
+        >
+          <h4>{{ players.name_first }} {{ players.name_last }}</h4>
+          <img
+            [src]="getPhoto(players.player_id)"
+            onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
+          />
+        </div>
+      </ng-template>
     </div>
   </ng-template>
+</ng-container>
+<ng-template #showAll>
+  <div class="grid-container">
+    <div
+      *ngFor="let item of players"
+      class="results"
+      (click)="
+        showDetails(
+          item.player_id,
+          item.name_first,
+          item.name_last,
+          item.team_id
+        )
+      "
+    >
+      <h4>{{ item.name_first }} {{ item.name_last }}</h4>
+      <img
+        [src]="getPhoto(item.player_id)"
+        onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
+      />
+    </div>
+  </div>
+</ng-template>
