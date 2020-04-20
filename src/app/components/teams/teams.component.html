@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-sm-6 col-12 teams" *ngFor="let team of teams">
+      <p class="team-name">{{ team.name }} {{ team.id }}</p>
+      <img
+        (click)="goToTeam(team.id)"
+        class="team-img"
+        src="https://www-league.nhlstatic.com/images/logos/teams-current-primary-light/{{
+          team.id
+        }}.svg"
+        alt=""
+      />
+    </div>
+  </div>
+</div>
