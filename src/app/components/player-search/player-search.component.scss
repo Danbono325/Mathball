@@ -1,0 +1,71 @@
+h1 {
+    margin-left: 40px;
+    font-size: 3rem;
+    margin-top: 2vh;
+  }
+  
+  .heading {
+    text-align: center;
+    font-family: 'Lexend Tera', sans-serif;
+  }
+  
+  .input {
+   display: flex;
+   justify-content: center;
+  }
+  
+  
+  input {
+    // margin: 0 auto;
+    width: 50vw;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+    // margin-left: 40px;
+    border: 2px solid black;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+  }
+  
+  button {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    margin-left: 40px;
+    font-size: 1.8rem;
+  }
+  
+  .grid-container {
+    // width: 95%;
+    // max-width: 1200px;
+    margin: 0 auto;
+  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1em;
+  }
+  
+  .results {
+    font-size: 2rem;
+    text-align: center;
+    position: relative;
+  
+    img {
+      margin-top: 1.8vh;
+      width: 350px;
+      height: 500px;
+      box-shadow: 0 16px 18px 0 rgba(0, 0, 0, 0.6);
+      transition: all 0.4s;
+      border-radius: 30px;
+      border: 3px solid black;
+      transform: scale(1);
+    }
+    &:hover {
+      cursor: pointer;
+      color: blue;
+      transition: all 0.4s;
+      transform: scale(0.9);
+    }
+  }
+  
