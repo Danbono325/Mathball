@@ -9,6 +9,7 @@ import { ApiServiceService } from "./services/api-service.service";
 import { PlayerSearchComponent } from "./components/player-search/player-search.component";
 import { TeamsComponent } from "./components/teams/teams.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
+import { QuestionsComponent } from './components/questions/questions.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { NavbarComponent } from "./components/navbar/navbar.component";
     PlayerSearchComponent,
     TeamsComponent,
     NavbarComponent,
+    QuestionsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ApiServiceService],

@@ -1,0 +1,34 @@
+{
+  "pitcher": {
+    "num": 5,
+    "questions": 
+    [
+    "In the $ season PITCHER threw % strikes out of # pitches what was his percentage of strikes he threw?",
+    "In the $ season PITCHER gave up % earned runs in his # innings pitched, what was his earned run average for the season? Hint (earned runs/innings pitched)*(total innings(9))",
+    "In the $ season PITCHER had % strikeouts while facing # batters. What percentage of batters did he strike out?",
+    "In the $ season PITCHER faced % batters and gave up # home runs. What percentage of batters hit home runs off of him?",
+    "In the $ season PITCHER had % wins and # losses. What was his win/loss percentage?"
+  ]
+  },
+    "hitter": {
+    "num": 5,
+    "questions": 
+    [
+    "In the $ season PLAYER had % hits and # of them were home runs what percentage of the hits were home runs?",
+    "In the $ season PLAYER had % strikeouts in his # at bats, what was his strikeout percentage?",
+    "In the $ season PLAYER had % rbi and # hits. What percentage of hits resulted in an rbi?",
+    "In the $ season PLAYER had a stolen base percentage of %, and # stolen bases, how many times was he caught stealing?",
+    "In the $ season PLAYER had % at bats and # runs. What percentage of at bats resulted in a run?"
+  ]
+  },
+  "team": {
+    "num": 4,
+    "questions": 
+      [
+      "In $, the TEAM had % hits and # runs, what percentage of hits resulted in a run.",
+      "In $ the TEAM had % at bats and # hits. What percentage of at bats resulted in a hit.",
+      "In $ the TEAM had % total bases and # runs. What percentage of those bases resulted in a run?",
+      "In $, the TEAM had % at bats and $ strike outs. What percentage of at bats resulted in a strike out?"
+      ]
+  }
+}

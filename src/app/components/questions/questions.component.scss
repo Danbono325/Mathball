@@ -1,0 +1,28 @@
+form {
+  border-radius: 6px;
+  border-color: gray;
+  background-color: lightgray;
+  color: black;
+  padding: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+  text-align: left;
+  width: 50vw;
+}
+input {
+  width: 20%;
+  padding: 8px 8px;
+  margin: 8px 0px;
+  border: none;
+  border-radius: 6px;
+  background-color: white;
+}
+input[type="submit"] {
+  background-color: #27d31b;
+  color: black;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  float: right;
+}
