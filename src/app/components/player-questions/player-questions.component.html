@@ -1,6 +1,9 @@
-<div *ngFor="let color of colors; let i = index" [ngStyle]="getTeamColorStyle(i)"></div>
+<div
+  *ngFor="let color of colors; let i = index"
+  [ngStyle]="getTeamColorStyle(i)"
+></div>
 <div class="player-card">
-    <img
+  <img
     [src]="getPhoto()"
     onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
   />
