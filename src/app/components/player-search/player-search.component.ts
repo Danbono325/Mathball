@@ -61,9 +61,12 @@ export class PlayerSearchComponent implements OnInit {
   showDetails(
     playerID: String,
     position: String,
-    teamID: String
+    teamID: String,
+    startYear: string
   ) {
-    this.router.navigate(['questions/player/' + playerID +"/" + position + "/" + teamID]);
+    console.log(startYear);
+    startYear = startYear.split("-")[0];
+    this.router.navigate(['questions/player/' + playerID +"/" + position + "/" + teamID + "/" + startYear]);
     console.log(playerID, teamID, position);
   }
 }

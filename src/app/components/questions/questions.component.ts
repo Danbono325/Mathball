@@ -20,6 +20,7 @@ export class QuestionsComponent implements OnInit {
   yearsActive: any[] = [];
   playerName;
   position;
+  startYear;
   questionState = {
     q1: [true, false, false],
     q2: [true, false, false],
@@ -30,20 +31,17 @@ export class QuestionsComponent implements OnInit {
     let id = this.activatedRoute.snapshot.paramMap.get("id");
     this.position = this.activatedRoute.snapshot.paramMap.get("position");
     this.curTeamID = this.activatedRoute.snapshot.paramMap.get("teamID");
+    this.startYear = Number(this.activatedRoute.snapshot.paramMap.get("year"));
+    for (var i = 2019; i >= this.startYear; i--) {
+      this.yearsActive.push(String(i));
+    }
+    console.log(this.yearsActive);
     if (id.length > 3) {
       this.curPlayerID = id;
       this.apiService.getPlayerDetail(id).subscribe((data) => {
         this.playerName =
           data["player_info"]["queryResults"]["row"]["name_display_first_last"];
-        let startYear = Number(
-          data["player_info"]["queryResults"]["row"]["pro_debut_date"].split(
-            "-"
-          )[0]
-        );
-        for (var i = 2019; i >= startYear; i--) {
-          this.yearsActive.push(String(i));
-        }
-        console.log(this.yearsActive);
+        // let startYear = Number(data['player_info']['queryResults']['row']['pro_debut_date'].split('-')[0]);
       });
       this.apiService.getQuestions().subscribe((data) => {
         // console.log(data['hitter']);
