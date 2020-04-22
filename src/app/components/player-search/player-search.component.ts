@@ -13,7 +13,7 @@ export class PlayerSearchComponent implements OnInit {
   value="";
   searchTerm="";
   buttonClicked = false;
-  numReturned = -1;
+  numReturned = -2;
   players: any[] = [];
   constructor(private apiService: ApiServiceService, private sanitizer: DomSanitizer, private router: Router) { }
 
@@ -65,7 +65,7 @@ export class PlayerSearchComponent implements OnInit {
     startYear: string
   ) {
     console.log(startYear);
-    startYear = startYear.split("-")[0];
+    startYear = startYear.split("-")[0]
     this.router.navigate(['questions/player/' + playerID +"/" + position + "/" + teamID + "/" + startYear]);
     console.log(playerID, teamID, position);
   }
