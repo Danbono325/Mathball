@@ -5,7 +5,7 @@
     [
     {"q": "In the $ season PLAYER threw % strikes out of # pitches what was his percentage of strikes he threw?", "vars": ["s", "np"]},
     {"q": "In the $ season PLAYER had % strikeouts while facing # batters. What percentage of batters did he strike out?", "vars": ["so", "tbf"]},
-    {"q": "In the $ season PLAYER gave up % home runs amnd faced # batters. What percentage of batters hit home runs off of him?", "vars": ["hr", "tbf"]},
+    {"q": "In the $ season PLAYER gave up % home runs and faced # batters. What percentage of batters hit home runs off of him?", "vars": ["hr", "tbf"]},
     {"q": "In the $ season PLAYER had % wins and # losses. What was his win/loss percentage?" , "vars": ["w", "l"]}
   ]
   },
