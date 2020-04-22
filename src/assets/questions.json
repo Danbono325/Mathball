@@ -13,10 +13,10 @@
     "num": 5,
     "questions": 
     [
-    {"q": "In the $ season PLAYER had % hits and # of them were home runs what percentage of the hits were home runs?", "vars": ["h", "hr"]},
+    {"q": "In the $ season PLAYER had % home runs and # hits. What percentage of the hits were home runs?", "vars": ["hr", "h"]},
     {"q": "In the $ season PLAYER had % strikeouts in his # at bats, what was his strikeout percentage?", "vars": ["so", "ab"]},
     {"q": "In the $ season PLAYER had % rbi and # hits. What percentage of hits resulted in an rbi?", "vars": ["rbi", "h"]},
-    {"q": "In the $ season PLAYER had % at bats and # runs. What percentage of at bats resulted in a run?", "vars": ["ab", "r"]}
+    {"q": "In the $ season PLAYER had % runs and # at bats. What percentage of at bats resulted in a run?", "vars": ["r", "ab"]}
   ]
   },
   "team": {
