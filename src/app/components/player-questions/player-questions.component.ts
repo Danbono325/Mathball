@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DomSanitizer } from '@angular/platform-browser';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-player-questions',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlayerQuestionsComponent implements OnInit {
 
-  constructor() { }
+  curPlayerID;
+
+  constructor(private sanitizer: DomSanitizer, private activatedRoute: ActivatedRoute) { }
 
   ngOnInit() {
+    this.curPlayerID = this.activatedRoute.snapshot.paramMap.get('id');
   }
+
+  getPhoto() {
+    let photoURL =
+      "https://securea.mlb.com/mlb/images/players/head_shot/" + this.curPlayerID + "@2x.jpg";
+
+    return this.sanitizer.bypassSecurityTrustUrl(photoURL);
+  }
+
 
 }
