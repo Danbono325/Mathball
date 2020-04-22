@@ -10,6 +10,7 @@
       'question-wrong': questionState['q1'][1],
       'question-correct': questionState['q1'][2]
     }"
+    [disabled] = "!questionState['q1'][0]"
     type="text"
     name="answer"
   />
@@ -32,6 +33,7 @@
       'question-wrong': questionState['q2'][1],
       'question-correct': questionState['q2'][2]
     }"
+    [disabled] = "!questionState['q2'][0]"
     type="text"
     name="answer"
   />
@@ -54,6 +56,7 @@
       'question-wrong': questionState['q3'][1],
       'question-correct': questionState['q3'][2]
     }"
+    [disabled] = "!questionState['q3'][0]"
     type="text"
     name="answer"
   />
