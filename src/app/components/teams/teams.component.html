@@ -2,7 +2,7 @@
 <div class="logo-container" id="logos">
   <div class="logos" *ngFor="let logo of logos">
     <img class="logo" [src]="logo.imgSrc" />
-    <!-- (click)="showTeamData(logo.teamID)" -->
+    {{logo.teamID}}
   </div>
 </div>
 

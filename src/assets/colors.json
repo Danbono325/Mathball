@@ -1,4 +1,5 @@
 [{
+    "id": 109,
     "name": "Arizona Diamondbacks",
     "league": "mlb",
     "colors": {
@@ -6,6 +7,7 @@
     }
   },
   {
+    "id": 144,
     "name": "Atlanta Braves",
     "league": "mlb",
     "colors": {
@@ -13,6 +15,7 @@
     }
   },
   {
+    "id": 110,
     "name": "Baltimore Orioles",
     "league": "mlb",
     "colors": {
@@ -20,6 +23,7 @@
     }
   },
   {
+    "id": 111,
     "name": "Boston Red Sox",
     "league": "mlb",
     "colors": {
@@ -27,6 +31,7 @@
     }
   },
   {
+    "id": 112,
     "name": "Chicago Cubs",
     "league": "mlb",
     "colors": {
@@ -34,6 +39,7 @@
     }
   },
   {
+    "id": 145,
     "name": "Chicago White Sox",
     "league": "mlb",
     "colors": {
@@ -41,6 +47,7 @@
     }
   },
   {
+    "id": 113,
     "name": "Cincinnati Reds",
     "league": "mlb",
     "colors": {
@@ -48,6 +55,7 @@
     }
   },
   {
+    "id": 115,
     "name": "Colorado Rockies",
     "league": "mlb",
     "colors": {
@@ -55,6 +63,7 @@
     }
   },
   {
+    "id": 114,
     "name": "Cleveland Indians",
     "league": "mlb",
     "colors": {
@@ -62,6 +71,7 @@
     }
   },
   {
+    "id": 116,
     "name": "Detroit Tigers",
     "league": "mlb",
     "colors": {
@@ -69,6 +79,7 @@
     }
   },
   {
+    "id": 117,
     "name": "Houston Astros",
     "league": "mlb",
     "colors": {
@@ -76,6 +87,7 @@
     }
   },
   {
+    "id": 118,
     "name": "Kansas City Royals",
     "league": "mlb",
     "colors": {
@@ -83,6 +95,7 @@
     }
   },
   {
+    "id": 108,
     "name": "Los Angeles Angels of Anaheim",
     "league": "mlb",
     "colors": {
@@ -90,6 +103,7 @@
     }
   },
   {
+    "id": 119,
     "name": "Los Angeles Dodgers",
     "league": "mlb",
     "colors": {
@@ -97,6 +111,7 @@
     }
   },
   {
+    "id": 146,
     "name": "Miami Marlins",
     "league": "mlb",
     "colors": {
@@ -104,6 +119,7 @@
     }
   },
   {
+    "id": 158,
     "name": "Milwaukee Brewers",
     "league": "mlb",
     "colors": {
@@ -111,6 +127,7 @@
     }
   },
   {
+    "id": 142,
     "name": "Minnesota Twins",
     "league": "mlb",
     "colors": {
@@ -118,6 +135,7 @@
     }
   },
   {
+    "id": 121,
     "name": "New York Mets",
     "league": "mlb",
     "colors": {
@@ -125,6 +143,7 @@
     }
   },
   {
+    "id": 147,
     "name": "New York Yankees",
     "league": "mlb",
     "colors": {
@@ -132,6 +151,7 @@
     }
   },
   {
+    "id": 133,
     "name": "Oakland Athletics",
     "league": "mlb",
     "colors": {
@@ -139,6 +159,7 @@
     }
   },
   {
+    "id": 143,
     "name": "Philadelphia Phillies",
     "league": "mlb",
     "colors": {
@@ -146,6 +167,7 @@
     }
   },
   {
+    "id": 134,
     "name": "Pittsburgh Pirates",
     "league": "mlb",
     "colors": {
@@ -153,6 +175,7 @@
     }
   },
   {
+    "id": 135,
     "name": "San Diego Padres",
     "league": "mlb",
     "colors": {
@@ -160,6 +183,7 @@
     }
   },
   {
+    "id": 137,
     "name": "San Francisco Giants",
     "league": "mlb",
     "colors": {
@@ -167,6 +191,7 @@
     }
   },
   {
+    "id": 136,
     "name": "Seattle Mariners",
     "league": "mlb",
     "colors": {
@@ -174,6 +199,7 @@
     }
   },
   {
+    "id": 138,
     "name": "St Louis Cardinals",
     "league": "mlb",
     "colors": {
@@ -181,6 +207,7 @@
     }
   },
   {
+    "id": 139,
     "name": "Tampa Bay Rays",
     "league": "mlb",
     "colors": {
@@ -188,6 +215,7 @@
     }
   },
   {
+    "id": 140,
     "name": "Texas Rangers",
     "league": "mlb",
     "colors": {
@@ -195,6 +223,7 @@
     }
   },
   {
+    "id": 141,
     "name": "Toronto Blue Jays",
     "league": "mlb",
     "colors": {
@@ -202,6 +231,7 @@
     }
   },
   {
+    "id": 120,
     "name": "Washington Nationals",
     "league": "mlb",
     "colors": {

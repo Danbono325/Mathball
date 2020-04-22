@@ -18,6 +18,10 @@ export class ApiServiceService {
   getQuestions() {
     return this.http.get("../../assets/questions.json");
   }
+  
+  getColors() {
+    return this.http.get("../../assets/colors.json");
+  }
 
   getPlayerDetail(playerID) {
     return this.http.get("http://lookup-service-prod.mlb.com/json/named.player_info.bam?sport_code='mlb'&player_id='" + playerID + "'")

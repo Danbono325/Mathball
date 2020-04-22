@@ -1,3 +1,4 @@
+<div *ngFor="let color of colors; let i = index" [ngStyle]="getTeamColorStyle(i)"></div>
 <div class="player-card">
     <img
     [src]="getPhoto()"
