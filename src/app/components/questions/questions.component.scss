@@ -14,15 +14,18 @@ input {
   width: 20%;
   padding: 8px 8px;
   margin: 8px 0px;
-  border: none;
   border-radius: 6px;
+  border: none;
+  vertical-align: baseline;
+  margin-left: 8px;
+}
+
+.question-unanswered {
   background-color: white;
 }
-input[type="submit"] {
-  background-color: #27d31b;
-  color: black;
-  border: none;
-  text-decoration: none;
-  cursor: pointer;
-  float: right;
+.question-wrong {
+  background-color: rgb(250, 66, 66);
+}
+.question-correct {
+  background-color: lightgreen;
 }

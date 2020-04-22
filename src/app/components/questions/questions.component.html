@@ -1,25 +1,66 @@
 <div class="form">
   <p>
-   {{questions[0]["q"]}}
-   {{questions[0]["answer"]}}
+    {{ questions[0]["q"] }}
+    {{ questions[0]["answer"] }}
   </p>
-  <input #q1 type="text" name="answer" />
-  <button class="btn btn-success" (click)=showAnswer(q1.value)>Submit</button>
+  <input
+    #q1
+    [ngClass]="{
+      'question-unanswered': questionState['q1'][0],
+      'question-wrong': questionState['q1'][1],
+      'question-correct': questionState['q1'][2]
+    }"
+    type="text"
+    name="answer"
+  />
+  <button
+    class="align-baseline ml-2 btn btn-success"
+    (click)="showAnswer(q1.value, 0)"
+  >
+    Submit
+  </button>
 </div>
 <div class="form">
   <p>
-   {{questions[1]["q"]}}
-   {{questions[1]["answer"]}}
+    {{ questions[1]["q"] }}
+    {{ questions[1]["answer"] }}
   </p>
-  <input #q2 type="text" name="answer" />
-  <button class="btn btn-success" (click)=showAnswer(q2.value)>Submit</button>
+  <input
+    #q2
+    [ngClass]="{
+      'question-unanswered': questionState['q2'][0],
+      'question-wrong': questionState['q2'][1],
+      'question-correct': questionState['q2'][2]
+    }"
+    type="text"
+    name="answer"
+  />
+  <button
+    class="btn btn-success align-baseline ml-2"
+    (click)="showAnswer(q2.value, 1)"
+  >
+    Submit
+  </button>
 </div>
 <div class="form">
   <p>
-   {{questions[2]["q"]}}
-   {{questions[2]["answer"]}}
+    {{ questions[2]["q"] }}
+    {{ questions[2]["answer"] }}
   </p>
-  <input #q3 type="text" name="answer" />
-  <button class="btn btn-success" (click)=showAnswer(q3.value)>Submit</button>
+  <input
+    #q3
+    [ngClass]="{
+      'question-unanswered': questionState['q3'][0],
+      'question-wrong': questionState['q3'][1],
+      'question-correct': questionState['q3'][2]
+    }"
+    type="text"
+    name="answer"
+  />
+  <button
+    class="btn btn-success align-baseline ml-2"
+    (click)="showAnswer(q3.value, 2)"
+  >
+    Submit
+  </button>
 </div>
-
