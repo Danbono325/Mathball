@@ -1,9 +1,25 @@
-<form *ngFor="let q of questions" action="">
+<div class="form">
   <p>
-   {{q["q"]}}
-   {{q["answer"]}}
+   {{questions[0]["q"]}}
+   {{questions[0]["answer"]}}
   </p>
-  <input type="text" name="answer" />
-  <input type="submit" value="Submit" />
-</form>
+  <input #q1 type="text" name="answer" />
+  <button class="btn btn-success" (click)=showAnswer(q1.value)>Submit</button>
+</div>
+<div class="form">
+  <p>
+   {{questions[1]["q"]}}
+   {{questions[1]["answer"]}}
+  </p>
+  <input #q2 type="text" name="answer" />
+  <button class="btn btn-success" (click)=showAnswer(q2.value)>Submit</button>
+</div>
+<div class="form">
+  <p>
+   {{questions[2]["q"]}}
+   {{questions[2]["answer"]}}
+  </p>
+  <input #q3 type="text" name="answer" />
+  <button class="btn btn-success" (click)=showAnswer(q3.value)>Submit</button>
+</div>
 

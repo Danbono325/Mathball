@@ -120,4 +120,8 @@ export class QuestionsComponent implements OnInit {
     this.questions.push({"q": q, "answer": answer});
   }
 
+  showAnswer(value) {
+    console.log(value);
+  }
+
 }
