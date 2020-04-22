@@ -12,7 +12,7 @@ const routes: Routes = [
     component: TeamsComponent,
   },
   {
-    path: "questions/player/:id/:position/:teamID",
+    path: "questions/player/:id/:position/:teamID/:year",
     component: PlayerQuestionsComponent,
   },
 ];
