@@ -1,0 +1,32 @@
+{
+  "pitcher": {
+    "num": 5,
+    "questions": 
+    [
+    {"q": "In the $ season PLAYER threw % strikes out of # pitches what was his percentage of strikes he threw?", "vars": ["s", "np"]},
+    {"q": "In the $ season PLAYER had % strikeouts while facing # batters. What percentage of batters did he strike out?", "vars": ["so", "tbf"]},
+    {"q": "In the $ season PLAYER gave up % home runs amnd faced # batters. What percentage of batters hit home runs off of him?", "vars": ["hr", "tbf"]},
+    {"q": "In the $ season PLAYER had % wins and # losses. What was his win/loss percentage?" , "vars": ["w", "l"]}
+  ]
+  },
+    "hitter": {
+    "num": 5,
+    "questions": 
+    [
+    {"q": "In the $ season PLAYER had % hits and # of them were home runs what percentage of the hits were home runs?", "vars": ["h", "hr"]},
+    {"q": "In the $ season PLAYER had % strikeouts in his # at bats, what was his strikeout percentage?", "vars": ["so", "ab"]},
+    {"q": "In the $ season PLAYER had % rbi and # hits. What percentage of hits resulted in an rbi?", "vars": ["rbi", "h"]},
+    {"q": "In the $ season PLAYER had % at bats and # runs. What percentage of at bats resulted in a run?", "vars": ["ab", "r"]}
+  ]
+  },
+  "team": {
+    "num": 4,
+    "questions": 
+      [
+      "In $, the TEAM had % hits and # runs, what percentage of hits resulted in a run.",
+      "In $ the TEAM had % at bats and # hits. What percentage of at bats resulted in a hit.",
+      "In $ the TEAM had % total bases and # runs. What percentage of those bases resulted in a run?",
+      "In $, the TEAM had % at bats and $ strike outs. What percentage of at bats resulted in a strike out?"
+      ]
+  }
+}

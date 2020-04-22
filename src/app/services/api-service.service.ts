@@ -14,4 +14,24 @@ export class ApiServiceService {
   searchPlayers(searchTerm: string): Observable<any[]> {
     return this.http.get<any[]>(this.playerSearchURL + searchTerm + "%25'");
   }
+
+  getQuestions() {
+    return this.http.get("../../assets/questions.json");
+  }
+
+  getPlayerDetail(playerID) {
+    return this.http.get("http://lookup-service-prod.mlb.com/json/named.player_info.bam?sport_code='mlb'&player_id='" + playerID + "'")
+  }
+
+  getHittingStats(year, playerID) {
+    let url = "http://lookup-service-prod.mlb.com/json/named.sport_hitting_tm.bam?league_list_id='mlb'&game_type='R'&season='"+ year + "'&player_id='" + playerID + "'";
+
+    return this.http.get(url);
+  }
+
+  getPitchingStats(year, playerID) {
+    let url = "http://lookup-service-prod.mlb.com/json/named.sport_pitching_tm.bam?league_list_id='mlb'&game_type='R'&season='"+ year + "'&player_id='" + playerID + "'";
+
+    return this.http.get(url);
+  }
 }

@@ -3,6 +3,7 @@ import { Routes, RouterModule } from "@angular/router";
 import { PlayerSearchComponent } from "./components/player-search/player-search.component";
 import { TeamsComponent } from "./components/teams/teams.component";
 import { QuestionsComponent } from "./components/questions/questions.component";
+import { PlayerQuestionsComponent } from './components/player-questions/player-questions.component';
 
 const routes: Routes = [
   { path: "", component: PlayerSearchComponent },
@@ -10,6 +11,7 @@ const routes: Routes = [
     path: "teams",
     component: TeamsComponent,
   },
+  {path: "questions/player/:id/:position/:teamID", component: PlayerQuestionsComponent},
   { path: "questions", component: QuestionsComponent },
 ];
 

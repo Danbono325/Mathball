@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiServiceService } from 'src/app/services/api-service.service';
 import { DomSanitizer } from "@angular/platform-browser";
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-player-search',
@@ -14,7 +15,7 @@ export class PlayerSearchComponent implements OnInit {
   buttonClicked = false;
   numReturned = -1;
   players: any[] = [];
-  constructor(private apiService: ApiServiceService, private sanitizer: DomSanitizer) { }
+  constructor(private apiService: ApiServiceService, private sanitizer: DomSanitizer, private router: Router) { }
 
   ngOnInit() {
   }
@@ -59,10 +60,10 @@ export class PlayerSearchComponent implements OnInit {
 
   showDetails(
     playerID: String,
-    firstName: String,
-    lastName: String,
+    position: String,
     teamID: String
   ) {
-    console.log(playerID, firstName, lastName, teamID);
+    this.router.navigate(['questions/player/' + playerID +"/" + position + "/" + teamID]);
+    console.log(playerID, teamID, position);
   }
 }
