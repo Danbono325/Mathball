@@ -116,7 +116,8 @@ export class QuestionsComponent implements OnInit {
         q = q.replace("#", stats[vars[1]]);
         let answer = Number(stats[vars[0]]) / Number(stats[vars[1]]);
         console.log("QUESTION: ", q);
-        this.addQuestion(q, answer);
+        let finalAnswer = String(answer.toFixed(3));
+        this.addQuestion(q, finalAnswer);
       });
     console.log(question);
   }
@@ -137,7 +138,8 @@ export class QuestionsComponent implements OnInit {
         q = q.replace("#", stats[vars[1]]);
         let answer = Number(stats[vars[0]]) / Number(stats[vars[1]]);
         console.log("QUESTION: ", q);
-        this.addQuestion(q, answer);
+        let finalAnswer = String(answer.toFixed(3));
+        this.addQuestion(q, finalAnswer);
       });
   }
 
