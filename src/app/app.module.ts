@@ -11,6 +11,7 @@ import { TeamsComponent } from "./components/teams/teams.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { QuestionsComponent } from './components/questions/questions.component';
 import { PlayerQuestionsComponent } from './components/player-questions/player-questions.component';
+import { TeamQuestionsComponent } from './components/team-questions/team-questions.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PlayerQuestionsComponent } from './components/player-questions/player-q
     NavbarComponent,
     QuestionsComponent,
     PlayerQuestionsComponent,
+    TeamQuestionsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [ApiServiceService],

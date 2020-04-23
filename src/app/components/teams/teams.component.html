@@ -1,6 +1,6 @@
 <div class="logo-container" id="logos">
   <div class="logos" *ngFor="let logo of logos">
-    <img class="logo" [src]="logo.imgSrc" />
+    <img class="logo" [src]="logo.imgSrc" (click)="showDetails('NA', logo.teamID, '2015')" />
   </div>
 </div>
 

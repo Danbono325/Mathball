@@ -60,6 +60,7 @@ export class QuestionsComponent implements OnInit {
       });
     } else {
       this.curTeamID = id;
+      console.log('TEAM NOT PLAYER');
     }
     console.log("CUR PLAYER ID IN QUESTIONS: ", this.curPlayerID);
   }

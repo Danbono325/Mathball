@@ -1,5 +1,6 @@
 import { Component, OnInit } from "@angular/core";
 import { Logo } from "../../models/Logo";
+import { Router } from '@angular/router';
 
 @Component({
   selector: "app-teams",
@@ -9,7 +10,7 @@ import { Logo } from "../../models/Logo";
 export class TeamsComponent implements OnInit {
   logos: Logo[] = [];
 
-  constructor() {}
+  constructor(private router: Router) {}
 
   ngOnInit() {
     for (var i = 108; i < 122; i++) {
@@ -31,6 +32,16 @@ export class TeamsComponent implements OnInit {
       teamID: 158,
     };
     this.logos.push(newLogo);
+  }
+
+  showDetails(
+    position: String,
+    teamID: String,
+    startYear: string
+  ) {
+    console.log(startYear);
+    // startYear = startYear.split("-")[0]
+    this.router.navigate(['questions/team/' + teamID +"/" + position + "/" + teamID + "/" + startYear]);
   }
 
 }
