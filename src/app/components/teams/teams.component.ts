@@ -32,4 +32,5 @@ export class TeamsComponent implements OnInit {
     };
     this.logos.push(newLogo);
   }
+
 }
