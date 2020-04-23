@@ -12,7 +12,9 @@ export class QuestionsComponent implements OnInit {
     private activatedRoute: ActivatedRoute,
     private apiService: ApiServiceService
   ) {}
-
+  
+  totalAnswered = 0;
+  allAnswered = false;
   curPlayerID;
   curTeamID;
   allQuestions: any[] = [];
@@ -125,7 +127,10 @@ export class QuestionsComponent implements OnInit {
     this.questions.push({ q: q, answer: answer });
   }
 
+  correct = 3;
+
   showAnswer(value, index) {
+    this.totalAnswered++;
     console.log(value);
     if (value == this.questions[index]["answer"]) {
       //CORRECT
@@ -137,6 +142,7 @@ export class QuestionsComponent implements OnInit {
         this.questionState["q3"] = [false, false, true];
       }
     } else {
+      this.correct--;
       //WRONG
       if (index == 0) {
         this.questionState["q1"] = [false, true, false];
@@ -146,5 +152,15 @@ export class QuestionsComponent implements OnInit {
         this.questionState["q3"] = [false, true, false];
       }
     }
+
+    if(this.totalAnswered == 3) {
+      this.allAnswered = true;
+    }
   }
+
+  refreshPage() {
+    location.reload();
+  }
+
+
 }
