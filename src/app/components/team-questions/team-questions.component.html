@@ -1,2 +1,16 @@
-<p>team-questions works!</p>
+<div
+  *ngFor="let color of colors; let i = index"
+  [ngStyle]="getTeamColorStyle(i)"
+></div>
+<div class="player-card">
+    <img
+      src="https://www.mlbstatic.com/team-logos/{{curTeamID}}.svg"
+      onError="this.src='https://cdn2.iconfinder.com/data/icons/sports-attitudes/1451/baseball-512.png'"
+    />
+    <div class="disclaimer">
+        <h4>Use 3 decimal places and round up always.</h4>
+        <h4>ie. 0.3021 round up to 0.303</h4>
+        <h4>unless 3rd digit ends in a 0. ie. 0.2701 use 0.270</h4>
+      </div>
+  </div>
 <app-questions></app-questions>

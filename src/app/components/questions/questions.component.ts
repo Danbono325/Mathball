@@ -29,6 +29,9 @@ export class QuestionsComponent implements OnInit {
     q3: [true, false, false],
   };
 
+  allTeamStats: any[] = [];
+  teamName;
+
   ngOnInit() {
     let id = this.activatedRoute.snapshot.paramMap.get("id");
     this.position = this.activatedRoute.snapshot.paramMap.get("position");
@@ -55,14 +58,30 @@ export class QuestionsComponent implements OnInit {
           this.allQuestions = data["hitter"]["questions"];
         }
 
-        console.log(this.allQuestions);
         this.setUpQuestions();
       });
     } else {
       this.curTeamID = id;
-      console.log('TEAM NOT PLAYER');
+      this.teamName = this.apiService.teams[this.curTeamID];
+      this.apiService.getQuestions().subscribe((data) => {
+        this.allQuestions = data['team']['questions'];
+        for(var i = 0; i < this.allQuestions.length; i++) {
+          this.allQuestions[i]['q'] =  this.allQuestions[i]['q'].replace('TEAM', this.teamName);
+        }
+      });
+      console.log('ALL TEAM QUESTIONS: ', this.allQuestions);
+      this.apiService.getTeamStats().subscribe(data => {
+        console.log(data);
+        let stats = data['stats'];
+        
+        for(var i = 0; i < stats.length; i++) {;
+            if(stats[i]['teamID'] == this.curTeamID){
+              this.allTeamStats.push(stats[i]);
+            }
+        }
+        this.setUpQuestions();
+      });
     }
-    console.log("CUR PLAYER ID IN QUESTIONS: ", this.curPlayerID);
   }
 
   setUpQuestions() {
@@ -122,7 +141,23 @@ export class QuestionsComponent implements OnInit {
       });
   }
 
-  makeTeamQuestion(question) {}
+  makeTeamQuestion(question) {
+    console.log('TEAM Q: ', question);
+    let q = "";
+    let yearIndex = Math.floor(Math.random() * this.yearsActive.length) + 0;
+    let index = Math.floor(Math.random() * 4) + 0;
+
+    q = question['q'];
+    let vars = question["vars"];
+    q = q.replace("$", this.yearsActive[yearIndex]);
+    q = q.replace("TEAM", this.teamName);
+    q = q.replace("%", this.allTeamStats[index][vars[0]]);
+    q = q.replace("#", this.allTeamStats[index][vars[1]]);
+    let answer = Number(this.allTeamStats[index][vars[0]]) / Number(this.allTeamStats[index][vars[1]]);
+    let finalAnswer = String(answer.toFixed(3));
+    // let finalAnswer = answer;
+    this.addQuestion(q, finalAnswer);
+  }
 
   addQuestion(q, answer) {
     this.questions.push({ q: q, answer: answer });

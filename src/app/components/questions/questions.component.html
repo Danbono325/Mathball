@@ -1,3 +1,5 @@
+
+
 <div class="form">
   <p>
     {{ questions[0]["q"] }}
@@ -21,6 +23,7 @@
   >
     Submit
   </button>
+  <p [hidden]=  "!questionState['q1'][1]">Correct Answer: {{ questions[0]["answer"] }}</p>
 </div>
 <div class="form">
   <p>
@@ -45,6 +48,7 @@
   >
     Submit
   </button>
+  <p [hidden]=  "!questionState['q2'][1]">Correct Answer: {{ questions[1]["answer"] }}</p>
 </div>
 <div class="form">
   <p>
@@ -69,9 +73,10 @@
   >
     Submit
   </button>
+  <p [hidden]="!questionState['q3'][1]">Correct Answer: {{ questions[2]["answer"] }}</p>
 </div>
 
 <div *ngIf="allAnswered" class="conclusion">
   <h3>You got {{correct}}/3 questions right!</h3>
-  <button class="btn btn-success" (click)=refreshPage()>Play again with this player?</button>
+  <button class="btn btn-success" (click)=refreshPage()>Play again with this player/team</button>
 </div>

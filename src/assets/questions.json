@@ -23,10 +23,10 @@
     "num": 4,
     "questions": 
       [
-      "In $, the TEAM had % hits and # runs, what percentage of hits resulted in a run.",
-      "In $ the TEAM had % at bats and # hits. What percentage of at bats resulted in a hit.",
-      "In $ the TEAM had % total bases and # runs. What percentage of those bases resulted in a run?",
-      "In $, the TEAM had % at bats and $ strike outs. What percentage of at bats resulted in a strike out?"
+      {"q":"In $, the TEAM had % runs and # hits, what percentage of hits resulted in a run.", "vars": ["r", "h"]},
+      {"q":"In $ the TEAM had % hits and # at bats. What percentage of at bats resulted in a hit.", "vars": ["h", "ab"]},
+      {"q":"In $ the TEAM had % runs and # total bases. What percentage of those bases resulted in a run?", "vars": ["r", "tb"]},
+      {"q":"In $, the TEAM had % strike outs and # at bats. What percentage of at bats resulted in a strike out?", "vars": ["so", "ab"]}
       ]
   }
 }
