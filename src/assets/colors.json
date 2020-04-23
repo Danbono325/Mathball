@@ -1,9 +1,10 @@
-[{
+[
+  {
     "id": 109,
     "name": "Arizona Diamondbacks",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["A71930",          "000000",           "E3D4AD"]
+      "hex": ["A71930", "000000", "E3D4AD", "3FC2CC"]
     }
   },
   {
@@ -11,7 +12,7 @@
     "name": "Atlanta Braves",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["CE1141",          "13274F"]
+      "hex": ["FFFFFF", "16284F", "CE1F43"]
     }
   },
   {
@@ -19,7 +20,7 @@
     "name": "Baltimore Orioles",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["DF4601",          "000000"]
+      "hex": ["DD4926", "000000", "FFFFFF"]
     }
   },
   {
@@ -27,7 +28,7 @@
     "name": "Boston Red Sox",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["BD3039",          "0D2B56"]
+      "hex": ["BD3139", "192C55", "FFFFFF"]
     }
   },
   {
@@ -35,7 +36,7 @@
     "name": "Chicago Cubs",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["CC3433",          "0E3386"]
+      "hex": ["CC3433", "CC3433", "273B81"]
     }
   },
   {
@@ -43,7 +44,7 @@
     "name": "Chicago White Sox",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["000000",          "C4CED4"]
+      "hex": ["000000", "C4CED4", "FFFFFF"]
     }
   },
   {
@@ -51,7 +52,7 @@
     "name": "Cincinnati Reds",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["C6011F",          "000000"]
+      "hex": ["C62127", "000000", "FFFFF"]
     }
   },
   {
@@ -59,7 +60,7 @@
     "name": "Colorado Rockies",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["333366",          "231F20",           "C4CED4"]
+      "hex": ["37246B", "000000", "C4CED4"]
     }
   },
   {
@@ -67,7 +68,7 @@
     "name": "Cleveland Indians",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["E31937",          "002B5C"]
+      "hex": ["E21D38", "1A2E5A", "FFFFFF"]
     }
   },
   {
@@ -75,7 +76,7 @@
     "name": "Detroit Tigers",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["0C2C56"]
+      "hex": ["182D55", "FFFFFF", "F26722"]
     }
   },
   {
@@ -83,7 +84,7 @@
     "name": "Houston Astros",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["002D62",          "EB6E1F"]
+      "hex": ["1E3160", "FFFFFF", "EA6E24"]
     }
   },
   {
@@ -91,7 +92,7 @@
     "name": "Kansas City Royals",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["004687",          "C09A5B"]
+      "hex": ["174885", "C0995A", "FFFFFF", "7BB2DD"]
     }
   },
   {
@@ -99,7 +100,7 @@
     "name": "Los Angeles Angels of Anaheim",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["BA0021",          "003263"]
+      "hex": ["C4CED3", "1A3561", "BA2026"]
     }
   },
   {
@@ -107,7 +108,7 @@
     "name": "Los Angeles Dodgers",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["EF3E42",          "005A9C"]
+      "hex": ["EF3E42", "FFFFFF", "005A9C"]
     }
   },
   {
@@ -115,7 +116,7 @@
     "name": "Miami Marlins",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["FF6600",          "0077C8",           "FFD100",           "000000"]
+      "hex": ["FF6600", "0077C8", "FFD100", "000000"]
     }
   },
   {
@@ -123,7 +124,7 @@
     "name": "Milwaukee Brewers",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["0A2351",     "B6922E"]
+      "hex": ["1A2550", "FFFFFF", "B5922F"]
     }
   },
   {
@@ -131,7 +132,7 @@
     "name": "Minnesota Twins",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["002B5C",     "D31145"]
+      "hex": ["1A2E5A", "FFFFFF", "D31E47"]
     }
   },
   {
@@ -139,7 +140,7 @@
     "name": "New York Mets",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["FF5910",     "002D72"]
+      "hex": ["FF5910", "002D72"]
     }
   },
   {
@@ -147,7 +148,7 @@
     "name": "New York Yankees",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["E4002B",     "003087"]
+      "hex": ["C4CED3", "FFFFFF", "122448"]
     }
   },
   {
@@ -155,7 +156,7 @@
     "name": "Oakland Athletics",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["003831",     "EFB21E"]
+      "hex": ["013831", "FFFFFF", "EEB21E"]
     }
   },
   {
@@ -163,7 +164,7 @@
     "name": "Philadelphia Phillies",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["284898",      "E81828"]
+      "hex": ["284999", "FFFFFF", "E71D2A"]
     }
   },
   {
@@ -171,7 +172,7 @@
     "name": "Pittsburgh Pirates",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["FDB827",      "000000"]
+      "hex": ["FDB724", "FFFFFF", "000000"]
     }
   },
   {
@@ -179,7 +180,7 @@
     "name": "San Diego Padres",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["002D62",      "FEC325",           "7F411C",           "A0AAB2"]
+      "hex": ["FFFFFF", "FFD100", "000000", "1E3160"]
     }
   },
   {
@@ -187,7 +188,7 @@
     "name": "San Francisco Giants",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["FD5A1E",      "000000",           "8B6F4E"]
+      "hex": ["F15B28", "000000", "E6D8AF"]
     }
   },
   {
@@ -195,7 +196,7 @@
     "name": "Seattle Mariners",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["0C2C56",      "005C5C",           "C4CED4"]
+      "hex": ["025D5D", "FFFFFF", "C4CED3", "182D55"]
     }
   },
   {
@@ -203,7 +204,7 @@
     "name": "St Louis Cardinals",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["C41E3A",      "000066",           "FEDB00"]
+      "hex": ["C4203B", "FFFFFF", "FDDA00", "22205F"]
     }
   },
   {
@@ -211,7 +212,7 @@
     "name": "Tampa Bay Rays",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["092C5C",      "8FBCE6",           "F5D130"]
+      "hex": ["90BCE4", "FFFFF", "1B2F5B", "F5D131"]
     }
   },
   {
@@ -219,7 +220,7 @@
     "name": "Texas Rangers",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["C0111F",      "003278"]
+      "hex": ["233974", "FFFFFF", "C02126"]
     }
   },
   {
@@ -227,7 +228,7 @@
     "name": "Toronto Blue Jays",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["134A8E",      "1D2D5C",           "E8291C"]
+      "hex": ["114B8D", "FFFFFF", "E72C25", "1E2E5C"]
     }
   },
   {
@@ -235,6 +236,7 @@
     "name": "Washington Nationals",
     "league": "mlb",
     "colors": {
-      "hex"   :   ["AB0003",      "11225B"]
+      "hex": ["AA1E22", "FFFFFF", "212759"]
     }
-  }]
+  }
+]
