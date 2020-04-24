@@ -20,3 +20,36 @@ img {
     position: absolute;
     left: -3vw;
 }
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .player-card{
+        position: relative;
+        top: 0px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    img {
+        margin-top: 1.8vh;
+        width: 200px;
+        height: 300px;
+        
+        transition: all 0.4s;
+        transform: scale(1);
+    }
+    
+    .disclaimer {
+        h4 {
+            font-size: 0.8rem;
+        }
+        margin-top: 4vh;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: -3vw;
+    }
+
+}

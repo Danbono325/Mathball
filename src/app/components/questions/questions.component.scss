@@ -37,13 +37,30 @@ input {
   margin-top: 3vh;
 }
 
-.disclaimer {
-  text-align: center; 
-  margin-top: 5vh;
-  background: darkgray;
-  border-radius: 5px;
-  width: 60vw;
-  margin: 0 auto;
-  margin-top: 5vh;
 
+
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+  .form {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 4vh;
+    margin-bottom: 2vh;
+  }
+  input {
+    width: 40vw;
+  }
+
+  .conclusion {
+    h3 {
+      font-size: 1.1rem;
+    }
+    button {
+      margin-bottom: 5vh;
+    }
+  }
 }

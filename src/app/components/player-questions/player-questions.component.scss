@@ -21,3 +21,38 @@ img {
     position: absolute;
     left: -3vw;
 }
+
+@media only screen 
+and (min-device-width: 320px) 
+and (max-device-width: 736px)
+and (-webkit-min-device-pixel-ratio: 2) {
+
+    .player-card{
+        position: relative;
+        top: 0px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    img {
+        margin-top: 1.8vh;
+        width: 200px;
+        height: 300px;
+        box-shadow: 0 16px 18px 0 rgba(0, 0, 0, 0.6);
+        transition: all 0.4s;
+        border-radius: 30px;
+        border: 3px solid black;
+        transform: scale(1);
+    }
+    
+    .disclaimer {
+        h4 {
+            font-size: 0.8rem;
+        }
+        margin-top: 4vh;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        left: -3vw;
+    }
+
+}
